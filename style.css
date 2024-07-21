@@ -1,0 +1,133 @@
+body {
+  color: #333;
+  background-color: mintcream;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 100%;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+}
+
+h1 {
+  color: indigo;
+  font-size: 2.35rem;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.95rem;
+  margin: 0;
+}
+
+h3 {
+  color: midnightblue;
+  font-size: 1.65rem;
+  margin: 1.5em 0 0.75em;
+}
+
+button {
+  background: transparent;
+  border: solid 0.2em indigo;
+  color: indigo;
+  padding: 0.5em 1em;
+  font-family: inherit;
+  border-radius: 1em;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.1s, background-color 0.1s, border-color 0.1s;
+}
+
+button:hover,
+button:focus {
+  color: white;
+  background: midnightblue;
+  border-color: midnightblue;
+}
+
+button[aria-expanded="true"] {
+  text-decoration: underline;
+  box-shadow: 0 0.05rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+main {
+  width: 95vw;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+main > header {
+  margin: 2.5rem 0 3.5rem;
+  text-align: center;
+}
+
+main > header p {
+  font-size: 1.5rem;
+  margin: 0.5em 0;
+}
+
+main > header p span[aria-hidden] {
+  margin: 0 0.15em;
+}
+
+section {
+  margin: 2.5rem 0;
+  padding: 0.75rem 2.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: solid 1px rgba(0, 0, 0, 0.075);
+  border-radius: 0.75rem;
+}
+
+section > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+section .panel[aria-hidden="true"] {
+  display: none;
+}
+
+article {
+  margin: 1.5rem 0 3rem;
+}
+
+article .frame {
+  position: relative;
+  height: 40rem;
+  width: 100%;
+  border: solid 1px rgba(0, 0, 0, 0.125);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.05rem 0.25rem rgba(0, 0, 0, 0.075);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+article .frame:before {
+  content: "Loading content...";
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-top: 18rem;
+  opacity: 0.75;
+}
+
+article .frame iframe {
+  transform-origin: 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.apollo .frame iframe {
+  width: 150%;
+  height: 150%;
+  transform: scale(calc(100 / 150));
+}
+
+.princess .frame iframe {
+  width: 125%;
+  height: 125%;
+  transform: scale(calc(100 / 125));
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's Up Today? | Kitchener-Waterloo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header>
+        <h1>What's Up Today?</h1>
+        <p>
+          <span>Kitchener-Waterloo</span>
+          <span aria-hidden="true"> &bull; </span>
+          <span id="date"></span>
+        </p>
+      </header>
+      <section class="cinema">
+        <header>
+          <h2 id="movies-title">Movies</h2>
+          <button
+            id="movies-toggle"
+            data-section="movies"
+            aria-controls="movies-panel"
+            aria-expanded="false"
+            class="toggle"
+          >
+            Show all movies
+          </button>
+        </header>
+        <div
+          id="movies-panel"
+          class="panel"
+          aria-labelledby="movies-title"
+          aria-hidden="true"
+        >
+          <article class="apollo">
+            <h3>Apollo Cinema</h3>
+            <div class="frame">
+              <iframe
+                src="https://apollocinema.ca/schedule"
+                frameborder="0"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </article>
+          <article class="princess original">
+            <h3>Princess (Original) Cinemas</h3>
+            <div class="frame">
+              <iframe
+                src="https://www.princesscinemas.com/movie-calendar/princess-original"
+                frameborder="0"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </article>
+          <article class="princess twin">
+            <h3>Princess (Twin) Cinemas</h3>
+            <div class="frame">
+              <iframe
+                src="https://www.princesscinemas.com/movie-calendar/princess-twin"
+                frameborder="0"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
