@@ -16,7 +16,7 @@
           <span id="date"></span>
         </p>
       </header>
-      <section class="cinema">
+      <section class="movies">
         <header>
           <h2 id="movies-title">Movies</h2>
           <button
@@ -36,7 +36,11 @@
           aria-hidden="true"
         >
           <article class="apollo">
-            <h3>Apollo Cinema</h3>
+            <h3>
+              <a href="https://apollocinema.ca" target="_blank"
+                >Apollo Cinema <small>Kitchener, Downtown</small></a
+              >
+            </h3>
             <div class="frame">
               <iframe
                 src="https://apollocinema.ca/schedule"
@@ -45,8 +49,12 @@
               ></iframe>
             </div>
           </article>
-          <article class="princess original">
-            <h3>Princess (Original) Cinemas</h3>
+          <article class="princess">
+            <h3>
+              <a href="https://www.princesscinemas.com" target="_blank"
+                >Princess (Original) Cinemas <small>Waterloo, Uptown</small></a
+              >
+            </h3>
             <div class="frame">
               <iframe
                 src="https://www.princesscinemas.com/movie-calendar/princess-original"
@@ -55,8 +63,12 @@
               ></iframe>
             </div>
           </article>
-          <article class="princess twin">
-            <h3>Princess (Twin) Cinemas</h3>
+          <article class="princess">
+            <h3>
+              <a href="https://www.princesscinemas.com" target="_blank"
+                >Princess (Twin) Cinemas <small>Waterloo, Uptown</small></a
+              >
+            </h3>
             <div class="frame">
               <iframe
                 src="https://www.princesscinemas.com/movie-calendar/princess-twin"
@@ -64,6 +76,100 @@
                 loading="lazy"
               ></iframe>
             </div>
+          </article>
+          <article class="landmark">
+            <h3>
+              <a href="https://www.landmarkcinemas.com" target="_blank"
+                >Landmark Cinemas <small>Waterloo, Boardwalk</small></a
+              >
+            </h3>
+            <p>
+              Landmark's booking website blocks external embedding.
+              <a
+                href="https://www.landmarkcinemas.com/showtimes/waterloo"
+                traget="_blank"
+                >You can visit it here</a
+              >.
+            </p>
+          </article>
+          <article class="mustang">
+            <h3>
+              <a href="http://www.mustangdriveinguelph.ca" target="_blank"
+                >Mustang Drive-In Theatre <small>Guelph</small></a
+              >
+            </h3>
+            <div class="frame">
+              <iframe
+                src="http://www.mustangdriveinguelph.ca/index.html#header16-6"
+                frameborder="0"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </article>
+          <article class="oxford">
+            <h3>
+              <a href="https://theoxforddrive-in.square.site" target="_blank"
+                >The Oxford Drive-In <small>Woodstock</small></a
+              >
+            </h3>
+            <div class="frame">
+              <iframe
+                src="https://theoxforddrive-in.square.site"
+                frameborder="0"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="events">
+        <header>
+          <h2 id="events-title">General Events</h2>
+          <button
+            id="events-toggle"
+            data-section="events"
+            aria-controls="events-panel"
+            aria-expanded="false"
+            class="toggle"
+          >
+            Show all events
+          </button>
+        </header>
+        <div
+          id="events-panel"
+          class="panel"
+          aria-labelledby="events-title"
+          aria-hidden="true"
+        >
+          <article class="kpl">
+            <h3>
+              <a href="https://www.kpl.org" target="_blank"
+                >Kitchener Public Library (KPL)
+                <small>Kitchener, All Locations</small></a
+              >
+            </h3>
+            <p>
+              KPL's events website blocks external embedding.
+              <a href="https://kpl.events.mylibrary.digital" traget="_blank"
+                >You can visit it here</a
+              >.
+            </p>
+          </article>
+          <article class="wpl">
+            <h3>
+              <a href="https://www.wpl.ca/" target="_blank"
+                >Waterloo Public Library (WPL)
+                <small>Waterloo, All Locations</small></a
+              >
+            </h3>
+            <p>
+              WPL's events website blocks external embedding.
+              <a
+                href="https://calendar.wpl.ca/events?r=thisweek"
+                traget="_blank"
+                >You can visit it here</a
+              >.
+            </p>
           </article>
         </div>
       </section>
