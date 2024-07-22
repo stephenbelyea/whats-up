@@ -18,7 +18,7 @@
       </header>
       <section class="movies">
         <header>
-          <h2 id="movies-title">Movies</h2>
+          <h2 id="movies-title">Movie Screenings</h2>
           <button
             id="movies-toggle"
             data-section="movies"
@@ -121,6 +121,41 @@
           </article>
         </div>
       </section>
+      <section class="entertainment">
+        <header>
+          <h2 id="entertainment-title">Live Entertainment</h2>
+          <button
+            id="entertainment-toggle"
+            data-section="entertainment"
+            aria-controls="entertainment-panel"
+            aria-expanded="false"
+            class="toggle"
+          >
+            Show all entertainment
+          </button>
+        </header>
+        <div
+          id="entertainment-panel"
+          class="panel"
+          aria-labelledby="entertainment-title"
+          aria-hidden="true"
+        >
+          <article class="centre">
+            <h3>
+              <a href="https://centreinthesquare.com/event/" target="_blank"
+                >Centre In The Square <small>Kitchener, Downtown</small></a
+              >
+            </h3>
+            <div class="frame">
+              <iframe
+                src="https://centreinthesquare.com/event/"
+                frameborder="0"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </article>
+        </div>
+      </section>
       <section class="events">
         <header>
           <h2 id="events-title">General Events</h2>
@@ -159,6 +194,16 @@
               >
             </h3>
             <p>KPL's events website blocks external embedding.</p>
+          </article>
+          <article class="waterloo">
+            <h3>
+              <a
+                href="https://events.waterloo.ca/default/Advanced"
+                target="_blank"
+                >City of Waterloo <small>Waterloo, Multiple Locations</small></a
+              >
+            </h3>
+            <p>Waterloo's calendar website blocks external embedding.</p>
           </article>
           <article class="wpl">
             <h3>
