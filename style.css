@@ -3,30 +3,37 @@
   --shadow-container: 0 0.05rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   color: #333;
   background-color: mintcream;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 100%;
   letter-spacing: -0.02em;
   line-height: 1.5;
+  font-size: 1rem;
 }
 
 h1 {
   color: indigo;
   font-size: 2.35rem;
   letter-spacing: -0.025em;
+  line-height: 1.25;
   margin: 0;
 }
 
 h2 {
   font-size: 1.95rem;
+  line-height: 1.25;
   margin: 0;
 }
 
 h3 {
   color: midnightblue;
   font-size: 1.65rem;
+  line-height: 1.35;
   margin: 0.75em 0;
 }
 
@@ -118,7 +125,7 @@ section .panel[aria-hidden="true"] {
 }
 
 article {
-  --frame-size: 155;
+  --frame-size: 150;
 
   margin: 1.5rem 0 3rem;
 }
@@ -156,4 +163,22 @@ article .frame iframe {
   width: calc(var(--frame-size) * 1%);
   height: calc(var(--frame-size) * 1%);
   transform: scale(calc(100 / var(--frame-size)));
+}
+
+@media screen and (max-width: 780px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 70%;
+  }
 }
